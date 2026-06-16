@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Aline Ferreira | Senior Front-End Developer Portfolio</title>
+    <meta
+      name="title"
+      content="Aline Ferreira | Senior Front-End Developer Portfolio"
+    />
+    <meta
+      name="description"
+      content="Senior Front-End Developer with experience in Vue.js, React, TypeScript and Node.js. I build modern, scalable and accessible web interfaces with a focus on performance, design systems and clean code."
+    />
+    <meta
+      name="keywords"
+      content="Aline Ferreira, Front-End Developer, Senior Front-End Developer, Vue.js, React, TypeScript, JavaScript, Node.js, Web Performance, Design Systems, Portfolio, Desenvolvedora Front-End"
+    />
+    <meta name="author" content="Aline Ferreira" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="theme-color" content="#22bebb" />
+
+    <!-- Canonical & Alternate Languages -->
+    <link rel="canonical" href="https://alineferreira.dev/" />
+    <link rel="alternate" hreflang="en" href="https://alineferreira.dev/" />
+    <link
+      rel="alternate"
+      hreflang="pt-BR"
+      href="https://alineferreira.dev/?lang=pt"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://alineferreira.dev/"
+    />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alineferreira.dev/" />
+    <meta
+      property="og:title"
+      content="Aline Ferreira | Senior Front-End Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Senior Front-End Developer with experience in Vue.js, React, TypeScript and Node.js. Building modern, scalable and accessible web interfaces."
+    />
+    <meta
+      property="og:image"
+      content="https://alineferreira.dev/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Aline Ferreira Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://alineferreira.dev/" />
+    <meta
+      name="twitter:title"
+      content="Aline Ferreira | Senior Front-End Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Senior Front-End Developer with experience in Vue.js, React, TypeScript and Node.js."
+    />
+    <meta
+      name="twitter:image"
+      content="https://alineferreira.dev/og-image.png"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <link rel="apple-touch-icon" href="assets/images/logo.png" />
+
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Structured Data: Person (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aline Ferreira",
+        "url": "https://alineferreira.dev/",
+        "image": "https://alineferreira.dev/og-image.png",
+        "jobTitle": "Senior Front-End Developer",
+        "description": "Senior Front-End Developer specialized in Vue.js, React, TypeScript and Node.js, building modern, scalable and accessible web interfaces.",
+        "email": "mailto:alinecff.89@gmail.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/alinefranco1",
+          "https://github.com/Ninneee12"
+        ],
+        "knowsAbout": [
+          "JavaScript",
+          "TypeScript",
+          "Vue.js",
+          "React.js",
+          "Next.js",
+          "Node.js",
+          "Web Performance",
+          "Design Systems",
+          "Front-End Architecture",
+          "CI/CD",
+          "Testing",
+          "Accessibility"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Kyndryl"
+        }
+      }
+    </script>
+
+    <!-- Structured Data: Website -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://alineferreira.dev/",
+        "name": "Aline Ferreira Portfolio",
+        "inLanguage": ["en", "pt-BR"],
+        "author": {
+          "@type": "Person",
+          "name": "Aline Ferreira"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="assets/images/logo.png"
+          alt="Aline Ferreira - Senior Front-End Developer"
+          width="100"
+          height="100"
+        />
+      </div>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li>
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+          </li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button
+          id="langToggle"
+          class="theme-toggle lang-toggle"
+          type="button"
+          aria-label="Change language"
+          title="Change language"
+        >
+          <span class="lang-label lang-label-pt">PT</span>
+          <span class="lang-label lang-label-us">US</span>
+        </button>
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle theme"
+          title="Toggle theme"
+        >
+          <i class="fas fa-moon icon-moon"></i>
+          <i class="fas fa-sun icon-sun"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="about-section">
+        <div class="about-text">
+          <h1 data-i18n="home.greeting">
+            Hi, I'm <span class="highlight">Aline Ferreira</span>
+          </h1>
+          <h2 data-i18n="home.role">Senior Front-End Developer</h2>
+          <p data-i18n="home.bio1">
+            I'm a Front-End Developer who loves turning ideas into modern,
+            responsive and scalable interfaces. I work daily with Vue.js, React,
+            JavaScript and TypeScript, and I'm also comfortable across the stack
+            — from automated testing and API integration to Node.js, PostgreSQL,
+            Docker and CI/CD pipelines.
+          </p>
+          <p data-i18n="home.bio2">
+            I'm passionate about technology, continuous learning, and crafting
+            products that bring together great user experience, performance and
+            clean, maintainable code. My goal is to transform ideas into
+            high-quality digital products by combining intuitive design with
+            efficient engineering.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="assets/images/profile.png"
+            alt="Portrait of Aline Ferreira, Senior Front-End Developer"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2 data-i18n="skills.title">Skills</h2>
+        <p class="skills-subtitle" data-i18n="skills.subtitle">
+          Senior Front-End Developer
+        </p>
+        <div class="skills-groups">
+          <div class="skills-group">
+            <h3>
+              <i class="fas fa-code"></i>
+              <span data-i18n="skills.core">Core Technologies</span>
+            </h3>
+            <ul class="skills-list">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>React.js</li>
+              <li>Vue.js</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>REST API</li>
+              <li>GraphQL</li>
+              <li>Responsive Design</li>
+              <li>Web Performance</li>
+              <li>Progressive Web Apps (PWA)</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>
+              <i class="fas fa-cubes"></i>
+              <span data-i18n="skills.frameworks"
+                >Frameworks &amp; Libraries</span
+              >
+            </h3>
+            <ul class="skills-list">
+              <li>React Hooks</li>
+              <li>Redux</li>
+              <li>Context API</li>
+              <li>Vuex</li>
+              <li>Pinia</li>
+              <li>Vite</li>
+              <li>Tailwind CSS</li>
+              <li>Sass / SCSS</li>
+              <li>Material UI</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>
+              <i class="fas fa-vial"></i>
+              <span data-i18n="skills.testing">Testing</span>
+            </h3>
+            <ul class="skills-list">
+              <li>Jest</li>
+              <li>Vitest</li>
+              <li>Cypress</li>
+              <li>Playwright</li>
+              <li>Testing Library</li>
+              <li>Unit Testing</li>
+              <li>Integration Testing</li>
+              <li>End-to-End Testing (E2E)</li>
+              <li>Test Automation</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>
+              <i class="fas fa-cloud"></i>
+              <span data-i18n="skills.cloud">Cloud, DevOps &amp; Tools</span>
+            </h3>
+            <ul class="skills-list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>GitLab</li>
+              <li>CI/CD</li>
+              <li>GitHub Actions</li>
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>Serverless</li>
+              <li>Vercel</li>
+              <li>Netlify</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>
+              <i class="fas fa-sitemap"></i>
+              <span data-i18n="skills.architecture"
+                >Architecture &amp; Software Engineering</span
+              >
+            </h3>
+            <ul class="skills-list">
+              <li>Front-End Architecture</li>
+              <li>Scalable Applications</li>
+              <li>Design Systems</li>
+              <li>Component-Based Architecture</li>
+              <li>Micro Frontends</li>
+              <li>Clean Code</li>
+              <li>SOLID Principles</li>
+              <li>Design Patterns</li>
+              <li>Software Engineering</li>
+              <li>Code Review</li>
+              <li>Refactoring</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>
+              <i class="fas fa-gauge-high"></i>
+              <span data-i18n="skills.performance"
+                >Performance &amp; Quality</span
+              >
+            </h3>
+            <ul class="skills-list">
+              <li>Web Accessibility (WCAG)</li>
+              <li>SEO</li>
+              <li>Core Web Vitals</li>
+              <li>Lighthouse</li>
+              <li>Performance Optimization</li>
+              <li>Cross-Browser Compatibility</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>
+              <i class="fas fa-robot"></i>
+              <span data-i18n="skills.ai">Artificial Intelligence</span>
+            </h3>
+            <ul class="skills-list">
+              <li>AI-Assisted Development</li>
+              <li>GitHub Copilot</li>
+              <li>OpenAI API</li>
+              <li>AI Integration</li>
+              <li>Prompt Engineering</li>
+              <li>Generative AI</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>
+              <i class="fas fa-people-arrows"></i>
+              <span data-i18n="skills.methodologies"
+                >Methodologies &amp; Collaboration</span
+              >
+            </h3>
+            <ul class="skills-list">
+              <li>Agile</li>
+              <li>Scrum</li>
+              <li>Kanban</li>
+              <li>Jira</li>
+              <li>Confluence</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>
+              <i class="fas fa-users"></i>
+              <span data-i18n="skills.soft">Soft Skills</span>
+            </h3>
+            <ul class="skills-list">
+              <li>Technical Leadership</li>
+              <li>Mentoring</li>
+              <li>Stakeholder Management</li>
+              <li>Cross-functional Collaboration</li>
+              <li>Problem Solving</li>
+              <li>Communication Skills</li>
+              <li>Product Mindset</li>
+              <li>Team Collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h2 data-i18n="experience.title">Experience</h2>
+        <div class="experience-container">
+          <div class="experience-card">
+            <div class="card-icon">💻</div>
+            <h3 data-i18n="exp.kyndryl.role">Frontend Developer</h3>
+            <p class="company" data-i18n="exp.kyndryl.company">Kyndryl</p>
+            <p class="description" data-i18n="exp.kyndryl.desc">
+              HTML5, CSS3, JavaScript ES6+, Vue.js, Component-Based
+              Architecture, State Management, Routing, Git, NPM, Vue DevTools,
+              Testing, Agile Methodologies
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="card-icon">⚙️</div>
+            <h3 data-i18n="exp.dobber.role">Software Development Analyst</h3>
+            <p class="company" data-i18n="exp.dobber.company">
+              Dobber Commerce and Representation
+            </p>
+            <p class="description" data-i18n="exp.dobber.desc">
+              Full Stack Development, Vue.js, JavaScript, CSS3, HTML5, Version
+              Control, Package Management, Component Architecture, Testing,
+              Agile Practices
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="card-icon">🛠️</div>
+            <h3 data-i18n="exp.qualittas.role">Support</h3>
+            <p class="company" data-i18n="exp.qualittas.company">
+              Qualittas Institute - Veterinary Postgraduate
+            </p>
+            <p class="description" data-i18n="exp.qualittas.desc">
+              Technical Support, HTML5, CSS3, JavaScript, Vue.js, Git, Problem
+              Solving, Documentation, Team Collaboration, Learning & Development
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="card-icon">🚀</div>
+            <h3 data-i18n="exp.tech.role">Full Stack Developer</h3>
+            <p class="company" data-i18n="exp.tech.company">Tech Projects</p>
+            <p class="description" data-i18n="exp.tech.desc">
+              Frontend & Backend, React, Node.js, Python, MongoDB, PostgreSQL,
+              API Development, REST Services, Cloud Deployment, Continuous
+              Integration
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2 data-i18n="projects.title">Projects</h2>
+        <div class="projects-container">
+          <a
+            href="https://github.com/Ninneee12/PongGame"
+            target="_blank"
+            class="project-card-link"
+          >
+            <div class="project-card">
+              <img
+                src="assets/images/projects/pong.png"
+                alt="Pong game built with p5.js - portfolio project"
+                loading="lazy"
+                width="600"
+                height="250"
+              />
+              <h3 data-i18n="project.pong.title">Pong</h3>
+              <p data-i18n="project.pong.desc">
+                A modern reimplementation of the classic Pong, built with pure
+                p5.js (no build step, no framework) and grown incrementally with
+                the help of GitHub Copilot. The project starts as a simple game
+                and gains a full HUD layer, menus, voice narration, arena
+                selection, scoreboard, win condition and organized assets.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/Ninneee12/PongGame"
+            target="_blank"
+            class="project-card-link"
+          >
+            <div class="project-card">
+              <img
+                src="assets/images/projects/pong.png"
+                alt="Pong game built with p5.js - portfolio project"
+                loading="lazy"
+                width="600"
+                height="250"
+              />
+              <h3 data-i18n="project.pong.title">Pong</h3>
+              <p data-i18n="project.pong.desc">
+                A modern reimplementation of the classic Pong, built with pure
+                p5.js (no build step, no framework) and grown incrementally with
+                the help of GitHub Copilot. The project starts as a simple game
+                and gains a full HUD layer, menus, voice narration, arena
+                selection, scoreboard, win condition and organized assets.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/Ninneee12/PongGame"
+            target="_blank"
+            class="project-card-link"
+          >
+            <div class="project-card">
+              <img
+                src="assets/images/projects/pong.png"
+                alt="Pong game built with p5.js - portfolio project"
+                loading="lazy"
+                width="600"
+                height="250"
+              />
+              <h3 data-i18n="project.pong.title">Pong</h3>
+              <p data-i18n="project.pong.desc">
+                A modern reimplementation of the classic Pong, built with pure
+                p5.js (no build step, no framework) and grown incrementally with
+                the help of GitHub Copilot. The project starts as a simple game
+                and gains a full HUD layer, menus, voice narration, arena
+                selection, scoreboard, win condition and organized assets.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/Ninneee12/PongGame"
+            target="_blank"
+            class="project-card-link"
+          >
+            <div class="project-card">
+              <img
+                src="assets/images/projects/pong.png"
+                alt="Pong game built with p5.js - portfolio project"
+                loading="lazy"
+                width="600"
+                height="250"
+              />
+              <h3 data-i18n="project.pong.title">Pong</h3>
+              <p data-i18n="project.pong.desc">
+                A modern reimplementation of the classic Pong, built with pure
+                p5.js (no build step, no framework) and grown incrementally with
+                the help of GitHub Copilot. The project starts as a simple game
+                and gains a full HUD layer, menus, voice narration, arena
+                selection, scoreboard, win condition and organized assets.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2 data-i18n="contact.title">Contact</h2>
+        <div class="contact-icons">
+          <a
+            href="mailto:alinecff.89@gmail.com"
+            class="contact-link"
+            title="Email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alinefranco1"
+            target="_blank"
+            class="contact-link"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/Ninneee12"
+            target="_blank"
+            class="contact-link"
+            title="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        <span data-i18n="footer.built">Built with care by</span>
+        <span class="footer-name">Aline Ferreira</span> &middot; &copy;
+        <span id="footerYear">2026</span>
+        <span data-i18n="footer.rights">All rights reserved.</span>
+      </p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
